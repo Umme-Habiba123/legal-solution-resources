@@ -39,13 +39,14 @@
             font-family: "Poppins", serif;
         }
     </style>
+     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'Dark-3': '707070',
-                        'dark-2': '414040',
+                        'Dark-3': '#707070',
+                        'dark-2': '#414040',
                         'Broun-color': 'B68C5A'
                     }
                 }
@@ -53,24 +54,20 @@
         }
     </script>
     <!-- tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
 
-<body class="w-8/12 mx-auto">
+<body class="lg:w-8/12 mx-auto">
     <!-- header section -->
     <header>
         <nav>
             <!-- nav section -->
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 justify-between">
                 <div class="navbar-start">
-                    <div class="">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        </div>
-                    </div>
-                    <a><img class="" src="images/logo2.png" alt=""></a>
+                    <a><img class="relative -left-6" src="images/logo2.png" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 #707070">
+                    <ul class="menu menu-horizontal px-1 text-[#707070]">
                         <li><a>Home <i class="fa-solid fa-greater-than"></i></a></li>
                         <li>
                             <summary>Services <i class="fa-solid fa-greater-than"></i>
@@ -81,13 +78,13 @@
                     </ul>
                 </div>
                 <div class=" lg:navbar-end navbar-end">
-                    <a class="btn btn-neutral text-white ">Free Consultation</a>
+                    <a class="btn btn-active btn-neutral">Free Consultation</a>
                 </div>
             </div>
         </nav>
         <!-- banner section -->
         <section>
-            <div class="hero lg:min-h-96 px-auto" style="background-image: url(images/banner.png">
+            <div class="hero lg:min-h-[700px] px-auto mt-5 lg:mt-20" style="background-image: url(images/banner.png)">
                 <div class="bg-opacity-60"></div>
                 <div class="hero-content text-neutral-content text-center">
                     <div class="">
@@ -102,7 +99,7 @@
                             <input type="text" placeholder="Search your services"
                                 class="input  input-primary lg:w-full lg:max-w-xs w-30 border-none mb-3" />
 
-                            <button class="btn btn-neutral">Get Started</button>
+                            <button class="btn btn-neutral ">Get Started</button>
                         </div>
                     </div>
                 </div>
@@ -125,7 +122,7 @@
 
             <!-- card-1 -->
 
-            <div class="card bg-base-100 lg:w-96 border-2 lg:px-17 lg:max-w-sm ">
+            <div class="card bg-base-100 lg:w-96 border-r-2 border-b-2  lg:px-17 lg:max-w-sm rounded-[0px]">
                 <figure class="px-10 pt-10">
                     <img src="images/business.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -141,7 +138,7 @@
             </div>
             <!-- card-2 -->
 
-            <div class="card bg-base-100 lg:w-96 border-2 lg:px-17 lg:max-w-sm">
+            <div class="card bg-base-100 lg:w-96 borderr-r-2 border-b-2 lg:px-17 lg:max-w-sm rounded-[0px] bg-gradient-to-b from-slate-100 to-white">
                 <figure class="px-10 pt-10">
                     <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -157,7 +154,7 @@
             </div>
             <!-- card-3 -->
 
-            <div class="card bg-base-100 lg:w-96 border-2 lg:px-17 lg:max-w-sm">
+            <div class="card bg-base-100 lg:w-96 border-b-2 border-l-2 lg:px-17 lg:max-w-sm rounded-[0px]">
                 <figure class="px-10 pt-10">
                     <img src="images/child.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -173,7 +170,7 @@
             </div>
             <!-- card-4 -->
 
-            <div class="card bg-base-100 lg:w-96 border-2 lg:px-17 lg:max-w-sm">
+            <div class="card bg-base-100 lg:w-96 border-r-2 lg:px-17 lg:max-w-sm rounded-[0px]">
                 <figure class="px-10 pt-10">
                     <img src="images/education.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -189,7 +186,7 @@
             </div>
             <!-- card-5 -->
 
-            <div class="card bg-base-100 lg:w-96 border-2 lg:px-17 lg:max-w-sm">
+            <div class="card bg-base-100 lg:w-96 border-r-2 lg:px-17 lg:max-w-sm rounded-[0px]">
                 <figure class="px-10 pt-10">
                     <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -205,7 +202,7 @@
             </div>
             <!-- card-6 -->
 
-            <div class="card bg-base-100 lg:w-96 border-2 lg:px-17 lg:max-w-sm">
+            <div class="card bg-base-100 lg:w-96 lg:px-17 lg:max-w-sm rounded-[0px]">
                 <figure class="px-10 pt-10">
                     <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -234,7 +231,7 @@
                 <!-- client banner page -->
                 <div class="carousel w-full ">
                     <div id="slide1" class="carousel-item relative w-full">
-                        <img class="" src="images/slider-1.jpg" class="w-full" />
+                        <img class="" src="images/slider-1.jpg" class="w-full min-h-" />
                         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                             <a href="#slide4" class="btn btn-circle">❮</a>
                             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -265,9 +262,10 @@
                 </div>
             </section>
 
-
             <section>
+
                 <!--frequently asked question  -->
+
                 <div class="mt-28 text-center">
                     <h2 class="eb-garamond-font text-[#414040 text-4xl font-extrabold">Frequently Asked Any Questions
                     </h2>
@@ -277,53 +275,58 @@
                         in some form, by injected humour.</p>
                 </div>
                 <!-- Question Answer -->
-                <div class="flex justify-between">
-                    <div>
+                <div class="lg:flex lg:justify-between">
+                    <div class="space-y-8 w-1/2 ">
                         <div class="collapse collapse-plus bg-base-200">
                             <input type="radio" name="my-accordion-3" checked="checked" />
                             <div class="collapse-title text-xl font-medium">Are application fee waivers available?</div>
                             <div class="collapse-content">
-                                <p>There are many variations of passages of Lorem Ipsum <br> available, but the majority have
+                                <p>There are many variations of passages of Lorem Ipsum <br> available, but the majority
+                                    have
                                     suffered alteration in some <br> form, by injected humour. </p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-base-200">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">Are application fee waivers available?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>There are many variations of passages of Lorem Ipsum <br> available, but the majority
+                                    have
+                                    suffered alteration in some <br> form, by injected humour.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-base-200">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">Are application fee waivers available?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>There are many variations of passages of Lorem Ipsum <br> available, but the majority
+                                    have
+                                    suffered alteration in some <br> form, by injected humour.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-base-200">
                             <input type="radio" name="my-accordion-3" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">Are application fee waivers available?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>There are many variations of passages of Lorem Ipsum <br> available, but the majority
+                                    have
+                                    suffered alteration in some <br> form, by injected humour.</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <img src="images/faq.png" alt="">
+                        <img class="w-full" src="./images/faq.png" alt="">
                     </div>
-                   
+
                 </div>
 
             </section>
-
     </main>
 
     <footer>
-
     </footer>
 
 
